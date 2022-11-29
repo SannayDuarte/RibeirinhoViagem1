@@ -13,4 +13,6 @@ Para a atividade vamos usar classes Java, JDBC e MySql
  
 Front-end 
 Atualizar a versão anterior do site, refatorando se preciso as páginas: Home, Destino, Promoções, Contato e as demais de acordo com seu modelo de dados usando HTML, CSS Bootstrap. 
+
+https://sannayduarte.github.io/RibeirinhoViagem1/
  
