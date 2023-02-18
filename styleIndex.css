@@ -1,26 +1,23 @@
 /*Cabeçanho*/
 @import url('https://fonts.googleapis.com/css2? family= Oleo+Script:wght@700 & family= Pacifico & display=swap');
 :root {
-  --background-color-1: #104f17;
+  --background-color-1: rgba(1, 24, 153, 0.74);
   --background-color-2: #4b872b;
   --background-color-3: #49bf52;
 }
 /*nav*/
 header {
   background: url(zfundo.jpg) no-repeat center center/cover;
-  height: 51rem;
+  height: 30rem;
 }
 h1 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   font-family: 'Oleo Script', 'Pacifico', cursiva;
   text-align: center;
-  margin: 8rem;
   font-size: 8rem;
+  margin: 0% 0% 10% 10%;
   color: var(--background-color-1);
-}
-h1:hover {
-  color: #a70707;
 }
 #links {
   color: var(--background-color-1);
