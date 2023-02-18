@@ -15,6 +15,11 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" id="links" href="#" onclick="abrirModal()">Acessar Conta</a>
@@ -23,17 +28,13 @@
                         <a class="nav-link" id="links" href="ajuda.html">Sobre Nos</a>
                     </div>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                
             </div>
         </nav>
         <h1>Ribeirinho<br>Viagem</h1>
         <!--pesquisar destinos-->
-        <aside>
-            <div class="destino" id="DestinosIda">
+        <div class="destino">
+            <div class="dest" id="DestinosIda">
                 <p>ESCOLHA A ORIGEM <br>
                     <select>
                         <option value="1">MANAUS</option>
@@ -50,7 +51,7 @@
                     <input type="date">
                 </p>
             </div>
-            <div class="destino" id="DestinoVolta">
+            <div class="dest" id="DestinoVolta">
                 <p>ESCOLHA O DESTINO <br>
                     <select>
                         <option value="1">MANAUS</option>
@@ -67,13 +68,24 @@
                     <input type="date"/>
                 </p>
             </div>
-            <div id="escolhas">
-                <input type="radio" name="opc" value="ida" id="esc"> SO IDA
-                <input type="radio" name="opc" value="volta" id="esc">VOLTA
-                <input type="radio" name="opc" value="multi" id="esc">IDA E VOLTA
-            </div> 
-            <button type="submit" class="btn" onclick="abrirModal()">Buscar</button>
-        </aside>
+        </div>
+        <div class="form-check" id="escolhas">
+            <label class="form-check-label" for="flexCheckDefault">
+            <input type="radio" name="opc" value="ida" id="esc">
+                IDA
+            </label>
+            <label class="form-check-label" for="flexCheckDefault">
+            <input type="radio" name="opc" value="volta" id="esc">
+                VOLTA
+            </label>
+            <label class="form-check-label" for="flexCheckDefault">
+            <input type="radio" name="opc" value="id.vol" id="esc">
+                IDA E VOLTA
+            </label> 
+            <label class="form-check-label" for="flexCheckDefault">
+            <input class="button" type="button" name="opc" value="Buscar" id="esc"onclick="abrirModal()">
+            </label> 
+        </div>
         <!--pesquisar destinos-->
 
         <!--Login-->
@@ -108,7 +120,7 @@
                     </div>
                     <div class="my-4">
                         <label class="form-check-label" for="exampleCheck1"><a href="cadastro.html">SE
-                                CADASTRE</a></label>
+                                CADASTRE</a></label>\
                     </div>
                     <button class="btn-entrar" onclick="Entrou()"><a href="passagens.html">Entrar</a></button>
                 </form>
@@ -284,312 +296,6 @@
         </div>
     </footer>
     <!--RODAPÉ-->
-    <style>
-        /*Cabeçanho*/
-        @import url('https://fonts.googleapis.com/css2? family= Oleo+Script:wght@700 & family= Pacifico & display=swap');
-
-        /*nav*/
-        header {
-            background: url(zfundo.jpg) no-repeat center center/cover;
-            height: 50rem;
-        }
-
-        h2 {
-            color: #4b6043;
-            width: 68rem;
-            font-size: 2rem;
-        }
-
-        #links {
-            color: #4b6043;
-            font-size: 1.6rem;
-            font-style: italic;
-        }
-
-        h1 {
-            display: flex;
-            justify-content: flex-end;
-            margin: 10rem;
-            font-size: 7rem;
-            font-family: 'Oleo Script', cursiva;
-            font-family: 'Pacifico', cursiva;
-            font-style: italic;
-            color: #0f291e;
-            text-align: center;
-        }
-
-        /*nav*/
-
-        /*login*/
-        .modal-container {
-            width: 100vw;
-            height: 100vh;
-            position: fixed;
-            top: 0px;
-            left: 0px;
-            z-index: 5000;
-            display: none;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 20px 20px 50px rgba(0.5, 0.5, 0.5, 0.25);
-            border-top: 1px solid rgba(255, 255, 255, 0.25);
-            border-right: 1px solid rgba(255, 255, 255, 0.25);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-        }
-
-        .modal-container.mostrar {
-            display: flex;
-        }
-
-        .acessar {
-            background: white;
-            width: 60%;
-            min-width: 300px;
-            padding: 40px;
-            border: 10px solid #0f291e;
-        }
-
-        .btn-entrar {
-            display: inline-block;
-            padding: 30px 60 px;
-            text-transform: uppercase;
-            background: #0f291e;
-            border-radius: 5px;
-            color: burlywood;
-            transition: background 500ms ease;
-        }
-
-        .fechar {
-            width: 3rem;
-            font-size: 1.5rem;
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            cursor: pointer;
-        }
-
-        /*login*/
-
-        /*dest*/
-        aside {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            color: #4b6043;
-        }
-
-        .destinos {
-            background-color: #4b6043;
-            border-radius: 7px;
-            color: #ddead1;
-            margin: 5px;
-            padding: 5px;
-            text-align: center;
-        }
-
-        .bus-btn {
-            display: inline-block;
-            padding: 30px 60px;
-            size: 7px;
-            background: #4b6043;
-            font-size: 1.2rem;
-            border-radius: 3px;
-            color: #ddead1;
-            transition: background 500ms ease;
-            justify-content: space-around;
-            padding: 10px;
-        }
-
-        .bus,
-        .cor-text {
-            color: #ddead1;
-        }
-
-        /*dest*/
-        /*Cabeçanho*/
-
-        /*promoçoes*/
-        main {
-            padding: 10rem;
-        }
-
-        main,
-        h3 {
-            text-align: center;
-            color: #658354;
-        }
-
-        #promo {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            justify-content: center;
-            grid-gap: 35px;
-        }
-
-        .card-promo {
-            font-size: 1.2rem;
-        }
-
-        .btn-promo {
-            background-color: white;
-            border: none;
-            color: #4b6043;
-        }
-
-        /*promoçoes*/
-
-        /*amazonia*/
-        .am {
-            background: url(rainforest-78516_1920.jpg) no-repeat center center/cover;
-            height: 40rem;
-            display: flex;
-        }
-
-        .ama {
-            width: 50%;
-            margin: auto;
-            padding: 45px;
-            box-shadow: 30px 30px 60px rgba(0.5, 0.5, 0.5, 0.25);
-            border-top: 1px solid rgba(255, 255, 255, 0.25);
-            border-right: 1px solid rgba(255, 255, 255, 0.25);
-            backdrop-filter: blur(6px);
-            -webkit-backdrop-filter: blur(6px);
-        }
-
-        .titulo {
-            text-align: center;
-            font-size: 2.5rem;
-            color: #ddead1;
-            font-family: 'Pacifico', cursiva;
-        }
-
-        .ama>p {
-            color: #ddead1;
-            font-size: 1.1rem;
-            font-style: oblique;
-
-        }
-
-        .btn-art {
-            width: 12rem;
-            display: inline-block;
-            font-size: 1.4rem;
-            border-radius: 3px;
-            color: #ddead1;
-            transition: background 500ms ease;
-            text-align: center;
-        }
-
-        /*amazonia*/
-
-        /*manaus*/
-        .manaus {
-            display: flex;
-            justify-content: center;
-            padding: 10rem;
-        }
-
-        .btn-manaus {
-            color: #4b6043;
-            font-size: 1.5rem;
-        }
-
-        .img-fluid {
-            width: 40rem;
-            height: 18rem;
-        }
-
-        .card-title {
-            font-size: 2rem;
-        }
-
-        .card-text {
-            font-size: 1.5rem;
-        }
-
-        /*manaus*/
-
-
-        /*Fotos*/
-        figure {
-            padding: 45px;
-        }
-
-        #fotos-container {
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            justify-content: center;
-            text-align: center;
-        }
-
-        #fotos {
-            grid-gap: 30px;
-        }
-
-        .fotos-image {
-            justify-items: center;
-            justify-content: center;
-            padding: 1rem;
-            width: 20rem;
-            height: 15rem;
-        }
-
-        /*Fotos*/
-
-        /*Rodape*/
-        footer {
-            display: grid;
-            color: #ddead1;
-            background-color: #4b6043;
-            text-align: center;
-        }
-
-        /*Rodape*/
-
-
-        @media(max-width:700px) {
-            .tit {
-                color: #ddead1;
-                width: 8rem;
-            }
-
-            h1 {
-                font-size: 4rem;
-                display: flex;
-                justify-content: center;
-            }
-
-            aside {
-                display: inline;
-            }
-
-            .pr {
-                display: inline;
-                justify-content: center;
-                padding: 10px;
-                grid-gap: 2rem;
-            }
-
-            #promo {
-                display: inline;
-
-
-                justify-content: center;
-                align-items: center;
-            }
-
-            #img-am {
-                width: 100px;
-                height: 100px;
-            }
-
-
-            #fotos {
-                display: inline;
-            }
-        }
-    </style>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>

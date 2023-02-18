@@ -1,62 +1,59 @@
 /*Cabeçanho*/
 @import url('https://fonts.googleapis.com/css2? family= Oleo+Script:wght@700 & family= Pacifico & display=swap');
 :root {
-  --background-color: #104f17;
-  --background-color: #4b872b;
-  --background-color: #49bf52;
+  --background-color-1: #104f17;
+  --background-color-2: #4b872b;
+  --background-color-3: #49bf52;
 }
 /*nav*/
 header {
-  background: url(zfundo.jpg) no-repeat center/cover;
+  background: url(zfundo.jpg) no-repeat center center/cover;
+  height: 51rem;
 }
 h1 {
-  color: #54ff;
-  font-family: 'Oleo Script', 'Pacifico', cursiva;
-  text-align: center;
   display: flex;
   justify-content: flex-end;
-  margin: 50rem;
-  font-size: 7rem;
+  font-family: 'Oleo Script', 'Pacifico', cursiva;
+  text-align: center;
+  margin: 8rem;
+  font-size: 8rem;
+  color: var(--background-color-1);
+}
+h1:hover {
+  color: #a70707;
 }
 #links {
-  color: var(--background-color);
+  color: var(--background-color-1);
   font-size: 1.6rem;
-  font-style: italic, cursiva;
-}
-h2 {
-  color: #4b6043;
-  width: 68rem;
-  font-size: 2rem;
+  font-style: italic cursiva;
 }
 /*nav*/
 
 /*dest*/
-aside {
+.destino {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  text-align: center;
+  grid-gap: 15px;
+  font-size: 20px;
+}
+.dest {
+  background-color: var(--background-color-2);
+  width: 23rem;
+}
+#escolhas {
   display: flex;
   justify-content: center;
-}
-.destinos {
-  background-color: #4b6043;
-  border-radius: 7px;
-  color: #ddead1;
-  margin: 5px;
-  padding: 5px;
   text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  grid-gap: 5px;
 }
-.bus-btn {
-  display: inline-block;
-  padding: 30px 60px;
-  size: 7px;
-  background: #4b6043;
-  font-size: 1.2rem;
-  border-radius: 3px;
-  transition: background 500ms ease;
-  justify-content: space-around;
-  padding: 10px;
-}
-.bus,
-.cor-text {
-  color: #ddead1;
+.button {
+  background: var(--background-color-2);
+  font-size: 20px;
+  border: none;
 }
 /*dest*/
 
