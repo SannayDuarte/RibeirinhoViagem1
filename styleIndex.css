@@ -1,11 +1,20 @@
-/*Cabeçanho*/
 @import url('https://fonts.googleapis.com/css2? family= Oleo+Script:wght@700 & family= Pacifico & display=swap');
 :root {
   --background-color-1: rgba(1, 24, 153, 0.74);
-  --background-color-2: #4b872b;
-  --background-color-3: #49bf52;
+  --background-color-2: #1b4404;
+  --background-color-3: #4b872b;
+  --background-color-4: #49bf52;
 }
-/*nav*/
+h2 {
+  color: var(--background-color-2);
+  text-align: center;
+}
+h3,
+h4,
+h5 {
+  color: var(--background-color-2);
+}
+/*Cabeçanho*/
 header {
   background: url(zfundo.jpg) no-repeat center center/cover;
   height: 30rem;
@@ -14,19 +23,52 @@ h1 {
   display: flex;
   justify-content: flex-start;
   font-family: 'Oleo Script', 'Pacifico', cursiva;
-  text-align: center;
   font-size: 8rem;
-  margin: 0% 0% 10% 10%;
+  text-align: center;
+  margin: 0% 0% 0% 10%;
   color: var(--background-color-1);
 }
 #links {
-  color: var(--background-color-1);
+  color: rgba(0, 0, 143, 0.836);
   font-size: 1.6rem;
-  font-style: italic cursiva;
+  font-style: negrito, italic, cursiva;
 }
-/*nav*/
+.button {
+  background: var(--background-color-2);
+  font-size: 20px;
+  border: none;
+}
+/*Cabeçanho*/
 
-/*dest*/
+/*promoçoes*/
+.promocoes {
+  padding: 25px;
+}
+#promo {
+  display: flex;
+  justify-content: center;
+}
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 45px;
+  text-align: center;
+}
+.card {
+  width: 22rem;
+  height: 14rem;
+  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
+.img-card {
+  width: 22rem;
+  height: 10rem;
+  border-top-right-radius: 35px;
+}
+/*promoçoes*/
+
+/*dest
 .destino {
   display: grid;
   grid-template-columns: auto auto;
@@ -52,8 +94,7 @@ h1 {
   font-size: 20px;
   border: none;
 }
-/*dest*/
-
+*/
 /*login*/
 .modal-container {
   width: 100vw;
@@ -71,11 +112,9 @@ h1 {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
-
 .modal-container.mostrar {
   display: flex;
 }
-
 .acessar {
   background: white;
   width: 60%;
@@ -83,7 +122,6 @@ h1 {
   padding: 40px;
   border: 10px solid #0f291e;
 }
-
 .btn-entrar {
   display: inline-block;
   padding: 30px 60 px;
@@ -93,7 +131,6 @@ h1 {
   color: burlywood;
   transition: background 500ms ease;
 }
-
 .fechar {
   width: 3rem;
   font-size: 1.5rem;
@@ -103,37 +140,6 @@ h1 {
   cursor: pointer;
 }
 /*login*/
-
-/*Cabeçanho*/
-
-/*promoçoes*/
-main {
-  padding: 10rem;
-}
-
-main,
-h3 {
-  text-align: center;
-  color: #658354;
-}
-
-#promo {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: center;
-  grid-gap: 35px;
-}
-
-.card-promo {
-  font-size: 1.2rem;
-}
-
-.btn-promo {
-  background-color: white;
-  border: none;
-  color: #4b6043;
-}
-/*promoçoes*/
 
 /*amazonia*/
 .am-ver {

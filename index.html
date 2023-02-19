@@ -36,41 +36,82 @@
     <!--cabeçalho home-->
 
     <!--Promoçoes-->
-    <main id="pr">
-        <h3>Aproveite nossas promoções</h3>
-        <h4>é so clicar </h4>
+    <main class="promocoes">
+        <h2>Promoções</h2>
         <div id="promo">
-            <div class="card" style="width: 18rem;">
-                <button class="btn-promo" onclick="abrirModal()">
-                    <img src="ztefe.am.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-promo">
-                            Passagem de Barco Manaus para Tefé por 100,00
-                            Saindo do porto de manaus as 16:00hrs, chegando em
-                            tefe 11:00hrs do terceiro dia.</p>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="cards">
+                            <div class="card" onclick="abrirModal()">
+                                <img src="zparitins.am.jpg" class="img-card" alt="paritins.am">
+                                <h5 class="card-title">Paritins: Viagem de Avião</h5>
+                                <p>15% de desconto na passagem</p>
+                            </div>
+                            <div class="card" onclick="abrirModal()">
+                                <img src="ztefe.am.png" class="img-card" alt="paritins.am">
+                                <h5 class="card-title">Tefe: Viagem de Avião</h5>
+                                <p>15% de desconto na passagem</p>
+                            </div>
+                            <div class="card" onclick="abrirModal()">
+                                <img src="zmaues.am.jpg" class="img-card" alt="paritins.am">
+                                <h5 class="card-title">Maues: Viagem de Avião</h5>
+                                <p>20% de desconto na passagem</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+                            <div class="card" onclick="abrirModal()">
+                                <img src="zmanaus.jpg" class="img-card" alt="paritins.am">
+                                <h5 class="card-title">Manaus: Passeio</h5>
+                                <p>25% de desconto</p>
+
+                            </div>
+                            <div class="card" onclick="abrirModal()">
+                                <img src="zairao.am.jpg" class="img-card" alt="paritins.am">
+                                <h5 class="card-title">Novo Airao: Passeio</h5>
+                                <p>25% de desconto</p>
+
+                            </div>
+                            <div class="card" onclick="abrirModal()">
+                                <img src="zpasseio.am.jpg" class="img-card" alt="paritins.am">
+                                <h5 class="card-title">Safari Amazonico</h5>
+                                <p>20% de desconto</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards">
+                            <div class="card" onclick="abrirModal()">
+                                <img src="zcoari.am.jpg" class="img-card" alt="paritins.am">
+                                <h5 class="card-title">Coari: Viagem de Barco</h5>
+                                <p>25% de desconto</p>
+                            </div>
+                            <div class="card" onclick="abrirModal()">
+                                <img src="zcodajas.am.jpg" class="img-card" alt="paritins.am">
+                                <h5 class="card-title">Codajas: Viagem de Barco</h5>
+                                <p>25% de desconto</p>
+
+                            </div>
+                            <div class="card" onclick="abrirModal()">
+                                <img src="zuarini.am.jpg" class="img-card" alt="paritins.am">
+                                <h5 class="card-title">Uarini: Viagem de Barco</h5>
+                                <p>25% de desconto</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <button class="btn-promo" onclick="abrirModal()">
-                    <img src="zmanaus.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-promo">
-                            Passeio por Manaus por 180,00. Incluso translato visita
-                            ao MUSA (Museu da Amazonia), Teatro Amazonas, e
-                            varios outros pontos turisticos.</p>
-                    </div>
-                </button>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <button class="btn-promo" onclick="abrirModal()">
-                    <img src="zparitins.am.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-promo">
-                            Passagem de Aviao de Manaus para Paritins valor 400,00.
-                            Sao tres horas de viagem com saida do Aeroporto Eduardo
-                            Gomes em Manaus.</p>
-                    </div>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
@@ -78,21 +119,31 @@
     <!--Promoçes-->
 
     <!--pesquisar destinos-->
-    <aside>
+    <!--<aside>
         <div class="destino">
             <div class="dest" id="DestinosIda">
                 <p>ESCOLHA A ORIGEM <br>
                     <select>
-                        <option value="1">MANAUS</option>
-                        <option value="2">TEFE</option>
-                        <option value="3">MARAA</option>
-                        <option value="4">MAUES</option>
-                        <option value="5">TABATINGA</option>
-                        <option value="6">PARINTINS</option>
-                        <option value="7">UARINI</option>
-                        <option value="8">MANACAPURU</option>
-                        <option value="9">ITACOATIARA </option>
-                        <option value="10">Alvaraes</option>
+                        <option value="1">MANAUS
+                        </option>
+                        <option value="2">TEFE
+                        </option>
+                        <option value="3">MARAA
+                        </option>
+                        <option value="4">MAUES
+                        </option>
+                        <option value="5">TABATINGA
+                        </option>
+                        <option value="6">PARINTINS
+                        </option>
+                        <option value="7">UARINI
+                        </option>
+                        <option value="8">MANACAPURU
+                        </option>
+                        <option value="9">
+                            ITACOATIARA </option>
+                        <option value="10">Alvaraes
+                        </option>
                     </select>
                     <input type="date">
                 </p>
@@ -100,16 +151,26 @@
             <div class="dest" id="DestinoVolta">
                 <p>ESCOLHA O DESTINO <br>
                     <select>
-                        <option value="1">MANAUS</option>
-                        <option value="2">TEFE</option>
-                        <option value="3">MARAA</option>
-                        <option value="4">MAUES</option>
-                        <option value="5">TABATINGA</option>
-                        <option value="6">PARINTINS</option>
-                        <option value="7">UARINI</option>
-                        <option value="8">MANACAPURU</option>
-                        <option value="9">ITACOATIARA </option>
-                        <option value="10">Alvaraes</option>
+                        <option value="1">MANAUS
+                        </option>
+                        <option value="2">TEFE
+                        </option>
+                        <option value="3">MARAA
+                        </option>
+                        <option value="4">MAUES
+                        </option>
+                        <option value="5">TABATINGA
+                        </option>
+                        <option value="6">PARINTINS
+                        </option>
+                        <option value="7">UARINI
+                        </option>
+                        <option value="8">MANACAPURU
+                        </option>
+                        <option value="9">
+                            ITACOATIARA </option>
+                        <option value="10">Alvaraes
+                        </option>
                     </select>
                     <input type="date" />
                 </p>
@@ -134,45 +195,47 @@
         </div>
         <!--pesquisar destinos-->
 
-        <!--Login-->
-        <script>
-            function abrirModal() {
-                const modal = document.getElementById("modal-login")
-                modal.classList.add("mostrar")
+    <!--Login-->
+    <script>
+        function abrirModal() {
+            const modal = document.getElementById("modal-login")
+            modal.classList.add("mostrar")
 
-                modal.addEventListener("click", (e) => {
-                    if (e.target.id == "modal-login" || e.target.className == "fechar") {
-                        modal.classList.remove("mostrar");
-                    }
-                });
-            }
-        </script>
-        <div id="modal-login" class="modal-container">
-            <div class="acessar">
-                <button class="fechar">x</button>
-                <h4 class="subtitulo">Login</h4>
-                <form>
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="digite seu email "
-                        required>
+            modal.addEventListener("click", (e) => {
+                if (e.target.id == "modal-login" || e.target.className == "fechar") {
+                    modal.classList.remove("mostrar");
+                }
+            });
+        }
+    </script>
+    <div id="modal-login" class="modal-container">
+        <div class="acessar">
+            <button class="fechar">x</button>
+            <h4 class="subtitulo">Login</h4>
+            <form>
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="digite seu email "
+                    required>
 
-                    <label for="exampleInputPassword1" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1"
-                        placeholder="digite sua senha " required>
-                    <a href="4ajud.html" class="tx">Esqueci minha senha</a>
-                    <div class="my-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Manter conectado</label>
-                    </div>
-                    <div class="my-4">
-                        <label class="form-check-label" for="exampleCheck1"><a href="cadastro.html">SE
-                                CADASTRE</a></label>\
-                    </div>
-                    <button class="btn-entrar" onclick="Entrou()"><a href="passagens.html">Entrar</a></button>
-                </form>
-            </div>
+                <label for="exampleInputPassword1" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="digite sua senha "
+                    required>
+                <a href="4ajud.html" class="tx">Esqueci minha
+                    senha</a>
+                <div class="my-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Manter
+                        conectado</label>
+                </div>
+                <div class="my-4">
+                    <label class="form-check-label" for="exampleCheck1"><a href="cadastro.html">SE
+                            CADASTRE</a></label>\
+                </div>
+                <button class="btn-entrar" onclick="Entrou()"><a href="passagens.html">Entrar</a></button>
+            </form>
         </div>
-        <!--Login-->
+    </div>
+    <!--Login-->
     </aside>
     <!--pesquisar destinos-->
 
@@ -181,46 +244,74 @@
         <div class="am-ver">
             <div class="ama">
                 <img classe="img" id="img-am" src="zbel (1).jpeg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
-                <h3 class="titulo">Turismo na Amazônia</h3>
+                <h3 class="titulo">Turismo na
+                    Amazônia</h3>
                 <p>
-                    Conhecer a Amazônia e passear por todos os lugares turísticos <br>te deixará ainda mais fascinado
+                    Conhecer a Amazônia e passear
+                    por todos os lugares turísticos
+                    <br>te deixará ainda mais
+                    fascinado
                     pela
                     região.
                     <br>
-                    Quer praias? <br>Na Amazônia tem, e são de água doce! E as florestas e matas? <br>Ah! Estas, então,
+                    Quer praias? <br>Na Amazônia
+                    tem, e são de água doce! E as
+                    florestas e matas? <br>Ah!
+                    Estas, então,
                     são
                     uma
                     atração turística à parte!
                     <br>
-                    O estado do Amazonas é rico em biodiversidade, com muita flora e <br>fauna que ajudam a formar um
+                    O estado do Amazonas é rico em
+                    biodiversidade, com muita flora
+                    e <br>fauna que ajudam a formar
+                    um
                     dos
-                    ecossistemas mais eficientes do mundo!<br>
+                    ecossistemas mais eficientes do
+                    mundo!<br>
 
-                    Você poderá encontrar tribos indígenas e ver de perto um dos fenômenos <br> mais incríveis da
+                    Você poderá encontrar tribos
+                    indígenas e ver de perto um dos
+                    fenômenos <br> mais incríveis da
                     natureza
-                    que é o encontro dos Rios Negro e Solimões,<br> que não se misturam!
+                    que é o encontro dos Rios Negro
+                    e Solimões,<br> que não se
+                    misturam!
                 </p>
-                <button type="button" class="bus-btn" onclick="abrirModal()">Venha Conhecer</button>
+                <button type="button" class="bus-btn" onclick="abrirModal()">Venha
+                    Conhecer</button>
             </div>
         </div>
         <div class="am-resp">
             <img class="img-resp" src="zbel (1).jpeg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
             <h3>Turismo na Amazônia</h3>
             <p>
-                Conhecer a Amazônia e passear por todos os lugares turísticos <br>te deixará ainda mais fascinado pela
+                Conhecer a Amazônia e passear por
+                todos os lugares turísticos <br>te
+                deixará ainda mais fascinado pela
                 região.
                 <br>
-                Quer praias? <br>Na Amazônia tem, e são de água doce! E as florestas e matas? <br>Ah! Estas, então, são
+                Quer praias? <br>Na Amazônia tem, e
+                são de água doce! E as florestas e
+                matas? <br>Ah! Estas, então, são
                 uma
                 atração turística à parte!
                 <br>
-                O estado do Amazonas é rico em biodiversidade, com muita flora e <br>fauna que ajudam a formar um dos
-                ecossistemas mais eficientes do mundo!<br>
+                O estado do Amazonas é rico em
+                biodiversidade, com muita flora e
+                <br>fauna que ajudam a formar um dos
+                ecossistemas mais eficientes do
+                mundo!<br>
 
-                Você poderá encontrar tribos indígenas e ver de perto um dos fenômenos <br> mais incríveis da natureza
-                que é o encontro dos Rios Negro e Solimões,<br> que não se misturam!
+                Você poderá encontrar tribos
+                indígenas e ver de perto um dos
+                fenômenos <br> mais incríveis da
+                natureza
+                que é o encontro dos Rios Negro e
+                Solimões,<br> que não se misturam!
             </p>
-            <button type="button" class="bus-btn" onclick="abrirModal()">Venha Conhecer</button>
+            <button type="button" class="bus-btn" onclick="abrirModal()">Venha
+                Conhecer</button>
         </div>
     </article>
     <!--Amazonia-->
@@ -243,7 +334,8 @@
             <div class="man">
                 <img classe="img" id="img-am" src="zteatro.man.jpg" class="col-md-6 float-md-end mb-3 ms-md-3"
                     alt="...">
-                <h3 class="titulo-ma">Turismo em Manaus:Capital do Amazonas</h3>
+                <h3 class="titulo-ma">Turismo em
+                    Manaus:Capital do Amazonas</h3>
                 <p class="card-text">
                     Conhecer a Capital do Amazonas e
                     passear por todos os lugares
@@ -257,7 +349,8 @@
             <img class="img-ma" src="zmanaus.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
             <h3 class="h-ma">Passeio por Manaus</h3>
             <p>
-                Conhecer a Capital do Amazonas e <br>
+                Conhecer a Capital do Amazonas e
+                <br>
                 passear por todos os lugares <br>
                 turísticos te deixará ainda<br>
                 mais fascinado pela região.
@@ -272,18 +365,22 @@
     <footer>
         <div class="nav justify-content-between container">
             <div class="col-6 col-sm-5 col-lg-4">
-                <h6 class="tx-cinzae">Centrais de atendimento</h6>
+                <h6 class="tx-cinzae">Centrais de
+                    atendimento</h6>
                 <ul class="nav flex-column">
-                    <li>Av. Borges de Medeiros, 159<br>Porto Alegre/RS</li>
+                    <li>Av. Borges de Medeiros,
+                        159<br>Porto Alegre/RS</li>
                     <li>(51)3456-5555</li>
-                    <li class="nav-item"><a href="./HTML/ajuda.html" class="nav-link p-0 text-white">Entre em
+                    <li class="nav-item"><a href="./HTML/ajuda.html" class="nav-link p-0 text-white">Entre
+                            em
                             contato</a>
                     </li>
                 </ul>
             </div>
             <div class="col-6 col-sm-5 col-lg-4">
                 <form>
-                    <h6>Deixe seu email para receber nossas ofertas!</h6>
+                    <h6>Deixe seu email para receber
+                        nossas ofertas!</h6>
                     <div class="d-flex w-100 gap-2">
                         <input id="newsletter1" type="text" class="form-control" placeholder="Digite seu email">
                         <button class="btn btn-light" type="button">Inscrever</button>
@@ -292,7 +389,9 @@
             </div>
         </div>
         <div class="row container">
-            <p class="m-0 text-center">© 2022 Company, Inc. All rights reserved.</p>
+            <p class="m-0 text-center">© 2022
+                Company, Inc. All rights reserved.
+            </p>
         </div>
     </footer>
     <!--RODAPÉ-->
