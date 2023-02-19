@@ -33,6 +33,47 @@
         </nav>
         <h1>Ribeirinho<br>Viagem</h1>
     </header>
+    <!--Login-->
+    <script>
+        function abrirModal() {
+            const modal = document.getElementById("modal-login")
+            modal.classList.add("mostrar")
+
+            modal.addEventListener("click", (e) => {
+                if (e.target.id == "modal-login" || e.target.className == "fechar") {
+                    modal.classList.remove("mostrar");
+                }
+            });
+        }
+    </script>
+    <div id="modal-login" class="modal-container">
+        <div class="acessar">
+            <button class="fechar">x</button>
+            <h4 class="subtitulo">Login</h4>
+            <form>
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="digite seu email "
+                    required>
+
+                <label for="exampleInputPassword1" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="digite sua senha "
+                    required>
+                <a href="4ajud.html" class="tx">Esqueci minha
+                    senha</a>
+                <div class="my-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Manter
+                        conectado</label>
+                </div>
+                <div class="my-4">
+                    <label class="form-check-label" for="exampleCheck1"><a href="cadastro.html">SE
+                            CADASTRE</a></label>\
+                </div>
+                <button class="btn-entrar" onclick="Entrou()"><a href="passagens.html">Entrar</a></button>
+            </form>
+        </div>
+    </div>
+    <!--Login-->
     <!--cabeçalho home-->
 
     <!--Promoçoes-->
@@ -118,126 +159,6 @@
     </main>
     <!--Promoçes-->
 
-    <!--pesquisar destinos-->
-    <!--<aside>
-        <div class="destino">
-            <div class="dest" id="DestinosIda">
-                <p>ESCOLHA A ORIGEM <br>
-                    <select>
-                        <option value="1">MANAUS
-                        </option>
-                        <option value="2">TEFE
-                        </option>
-                        <option value="3">MARAA
-                        </option>
-                        <option value="4">MAUES
-                        </option>
-                        <option value="5">TABATINGA
-                        </option>
-                        <option value="6">PARINTINS
-                        </option>
-                        <option value="7">UARINI
-                        </option>
-                        <option value="8">MANACAPURU
-                        </option>
-                        <option value="9">
-                            ITACOATIARA </option>
-                        <option value="10">Alvaraes
-                        </option>
-                    </select>
-                    <input type="date">
-                </p>
-            </div>
-            <div class="dest" id="DestinoVolta">
-                <p>ESCOLHA O DESTINO <br>
-                    <select>
-                        <option value="1">MANAUS
-                        </option>
-                        <option value="2">TEFE
-                        </option>
-                        <option value="3">MARAA
-                        </option>
-                        <option value="4">MAUES
-                        </option>
-                        <option value="5">TABATINGA
-                        </option>
-                        <option value="6">PARINTINS
-                        </option>
-                        <option value="7">UARINI
-                        </option>
-                        <option value="8">MANACAPURU
-                        </option>
-                        <option value="9">
-                            ITACOATIARA </option>
-                        <option value="10">Alvaraes
-                        </option>
-                    </select>
-                    <input type="date" />
-                </p>
-            </div>
-        </div>
-        <div class="form-check" id="escolhas">
-            <label class="form-check-label" for="flexCheckDefault">
-                <input type="radio" name="opc" value="ida" id="esc">
-                IDA
-            </label>
-            <label class="form-check-label" for="flexCheckDefault">
-                <input type="radio" name="opc" value="volta" id="esc">
-                VOLTA
-            </label>
-            <label class="form-check-label" for="flexCheckDefault">
-                <input type="radio" name="opc" value="id.vol" id="esc">
-                IDA E VOLTA
-            </label>
-            <label class="form-check-label" for="flexCheckDefault">
-                <input class="button" type="button" name="opc" value="Buscar" id="esc" onclick="abrirModal()">
-            </label>
-        </div>
-        <!--pesquisar destinos-->
-
-    <!--Login-->
-    <script>
-        function abrirModal() {
-            const modal = document.getElementById("modal-login")
-            modal.classList.add("mostrar")
-
-            modal.addEventListener("click", (e) => {
-                if (e.target.id == "modal-login" || e.target.className == "fechar") {
-                    modal.classList.remove("mostrar");
-                }
-            });
-        }
-    </script>
-    <div id="modal-login" class="modal-container">
-        <div class="acessar">
-            <button class="fechar">x</button>
-            <h4 class="subtitulo">Login</h4>
-            <form>
-                <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="digite seu email "
-                    required>
-
-                <label for="exampleInputPassword1" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="digite sua senha "
-                    required>
-                <a href="4ajud.html" class="tx">Esqueci minha
-                    senha</a>
-                <div class="my-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Manter
-                        conectado</label>
-                </div>
-                <div class="my-4">
-                    <label class="form-check-label" for="exampleCheck1"><a href="cadastro.html">SE
-                            CADASTRE</a></label>\
-                </div>
-                <button class="btn-entrar" onclick="Entrou()"><a href="passagens.html">Entrar</a></button>
-            </form>
-        </div>
-    </div>
-    <!--Login-->
-    </aside>
-    <!--pesquisar destinos-->
 
     <!--Amazonia-->
     <article>
