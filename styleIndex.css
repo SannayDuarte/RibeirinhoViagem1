@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2? family= Oleo+Script:wght@700 & family= Pacifico & display=swap');
 :root {
-  --background-color-1: rgba(1, 24, 153, 0.74);
-  --background-color-2: #1b4404;
-  --background-color-3: #4b872b;
-  --background-color-4: #49bf52;
+  --background-color-1: #00004d;
+  --background-color-2: #102404;
+  --background-color-3: #f6f8f5;
 }
 h2 {
   color: var(--background-color-2);
@@ -15,6 +14,10 @@ h5 {
   color: var(--background-color-2);
 }
 /*Cabeçanho*/
+body,
+main {
+  background: url(fundao.jpg) no-repeat center center/cover;
+}
 header {
   background: url(zfundo.jpg) no-repeat center center/cover;
   height: 30rem;
@@ -26,10 +29,10 @@ h1 {
   font-size: 8rem;
   text-align: center;
   margin: 0% 0% 0% 10%;
-  color: var(--background-color-1);
+  color: #0f0f5ad0;
 }
 #links {
-  color: rgba(0, 0, 143, 0.836);
+  color: var(--background-color-1);
   font-size: 1.6rem;
   font-style: negrito, italic, cursiva;
 }
@@ -40,83 +43,6 @@ h1 {
 }
 /*Cabeçanho*/
 
-/*promoçoes*/
-.promocoes {
-  padding: 25px;
-}
-#promo {
-  display: flex;
-  justify-content: center;
-}
-.cards {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 45px;
-  text-align: center;
-}
-.card {
-  width: 22rem;
-  height: 14rem;
-  border-bottom-right-radius: 35px;
-  border-bottom-left-radius: 35px;
-  border-top-right-radius: 35px;
-}
-.img-card {
-  width: 22rem;
-  height: 10rem;
-  border-top-right-radius: 35px;
-}
-/*promoçoes*/
-
-/*manaus*/
-article {
-  width: 80%;
-  margin: 0% 10% 0% 10%;
-  border: solid;
-}
-.capital {
-  margin: 0% 5% 0% 5%;
-}
-.card-ma {
-  width: 100%;
-  height: 9rem;
-}
-.text {
-  font-size: 20px;
-}
-.img-ma {
-  width: 24rem;
-  height: 9rem;
-}
-/*manaus*/
-
-/*dest
-.destino {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
-  text-align: center;
-  grid-gap: 15px;
-  font-size: 20px;
-}
-.dest {
-  background-color: var(--background-color-2);
-  width: 23rem;
-}
-#escolhas {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  font-size: 20px;
-  grid-gap: 5px;
-}
-.button {
-  background: var(--background-color-2);
-  font-size: 20px;
-  border: none;
-}
-*/
 /*login*/
 .modal-container {
   width: 100vw;
@@ -163,118 +89,78 @@ article {
 }
 /*login*/
 
-/*amazonia*/
-.am-ver {
-  background: url(rainforest-78516_1920.jpg) no-repeat center center/cover;
-  height: 40rem;
+/*promoçoes*/
+.promocoes {
+  padding: 25px;
+}
+#promo {
   display: flex;
+  justify-content: center;
 }
-
-.ama {
-  width: 50%;
-  margin: auto;
-  padding: 45px;
-  box-shadow: 30px 30px 60px rgba(0.5, 0.5, 0.5, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
-  border-right: 1px solid rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-}
-
-.titulo {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #ddead1;
-  font-family: 'Pacifico', cursiva;
-}
-
-.ama > p {
-  color: #ddead1;
-  font-size: 1.1rem;
-  font-style: oblique;
-}
-
-.btn-art {
-  width: 12rem;
-  display: inline-block;
-  font-size: 1.4rem;
-  border-radius: 3px;
-  background: #4b6043;
-  transition: background 500ms ease;
-  text-align: center;
-}
-.am-resp {
-  display: none;
-}
-/*amazonia*/
-
-/*manaus*/
-.ma-ver {
-  background: url(zmanaus.jpg) no-repeat center center/cover;
-  height: 40rem;
-  display: flex;
-}
-
-.ma-resp {
-  display: none;
-}
-
-.man {
-  width: 50%;
-  margin: auto;
-  padding: 45px;
-  box-shadow: 30px 30px 60px rgba(0.5, 0.5, 0.5, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
-  border-right: 1px solid rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-}
-
-.titulo-ma {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #0f291e;
-  font-family: 'Pacifico', 'cursiva';
-}
-
-.man-ver > p {
-  color: #0f291e;
-  font-size: 1.1rem;
-  font-style: oblique;
-}
-
-/*manaus*/
-
-/*Fotos*/
-figure {
-  padding: 45px;
-}
-
-#fotos-container {
+.cards {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  justify-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 45px;
   text-align: center;
 }
-
-#fotos {
-  grid-gap: 30px;
+.card-pro {
+  width: 22rem;
+  height: 14rem;
+  background: var(--background-color-3);
+  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
 }
-
-.fotos-image {
-  justify-items: center;
-  justify-content: center;
-  padding: 1rem;
-  width: 20rem;
-  height: 15rem;
+.img-card {
+  width: 22rem;
+  height: 10rem;
+  border-top-right-radius: 35px;
 }
-/*Fotos*/
+/*promoçoes*/
+
+/*manaus*/
+.sidebar {
+  display: flex;
+  grid-gap: 10px;
+}
+.sidebar__sidebar {
+  width: 30%;
+}
+.sidebar__main {
+  /* Take the remaining width */
+  flex: 1;
+  padding: 10px;
+  /* Make it scrollable */
+  overflow: auto;
+}
+.Manaus {
+  border: solid var(--background-color-3);
+}
+.capital {
+  margin: 0% 2% 0% 2%;
+}
+.card-ma {
+  width: 100%;
+  height: 10rem;
+}
+.text {
+  font-size: 20px;
+}
+.img-ma {
+  width: 22rem;
+  height: 10rem;
+}
+.img-anuncio {
+  padding: 10px;
+  width: 29.5rem;
+}
+/*manaus*/
 
 /*Rodape*/
 footer {
   display: grid;
-  color: #ddead1;
-  background-color: #4b6043;
+  color: white;
+  background-color: var(--background-color-2);
   text-align: center;
 }
 /*Rodape*/
