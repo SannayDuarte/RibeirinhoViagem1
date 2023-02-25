@@ -14,9 +14,11 @@ h5 {
   color: var(--background-color-2);
 }
 /*Cabeçanho*/
-body,
-main {
-  background: url(fundao.jpg) no-repeat center center/cover;
+.prin {
+  background: url(z.fundao.jpg) no-repeat center center/cover;
+  color: #eee;
+  background-color: rgba(54, 53, 53, 0.301);
+  background-blend-mode: color;
 }
 header {
   background: url(zfundo.jpg) no-repeat center center/cover;
@@ -41,8 +43,6 @@ h1 {
   font-size: 20px;
   border: none;
 }
-/*Cabeçanho*/
-
 /*login*/
 .modal-container {
   width: 100vw;
@@ -88,6 +88,7 @@ h1 {
   cursor: pointer;
 }
 /*login*/
+/*Cabeçanho*/
 
 /*promoçoes*/
 .promocoes {
@@ -102,6 +103,7 @@ h1 {
   grid-template-columns: auto auto auto;
   grid-gap: 45px;
   text-align: center;
+  cursor: pointer;
 }
 .card-pro {
   width: 22rem;
@@ -110,6 +112,7 @@ h1 {
   border-bottom-right-radius: 35px;
   border-bottom-left-radius: 35px;
   border-top-right-radius: 35px;
+  color: var(--background-color-2);
 }
 .img-card {
   width: 22rem;
@@ -142,9 +145,8 @@ h1 {
 .card-ma {
   width: 100%;
   height: 10rem;
-}
-.text {
   font-size: 20px;
+  color: var(--background-color-2);
 }
 .img-ma {
   width: 22rem;
@@ -153,88 +155,60 @@ h1 {
 .img-anuncio {
   padding: 10px;
   width: 29.5rem;
+  cursor: pointer;
 }
 /*manaus*/
 
 /*Rodape*/
 footer {
   display: grid;
-  color: white;
+  color: var(--background-color-3);
   background-color: var(--background-color-2);
   text-align: center;
 }
 /*Rodape*/
 
 @media (max-width: 500px) {
-  .tit {
-    color: #ddead1;
-    width: 8rem;
-  }
-
   h1 {
     font-size: 4rem;
     display: flex;
     justify-content: center;
   }
 
-  #pr {
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
   #promo {
     cursor: pointer;
     display: inline;
     justify-content: center;
     align-items: center;
   }
-  .am-ver {
-    display: none;
+
+  .sidebar__main {
+    /* Take the remaining width */
+    flex: 1;
+    padding: 10px;
+    /* Make it scrollable */
+    overflow: auto;
+    height: 34rem;
   }
-  .am-resp {
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+  .Manaus {
+    border: solid var(--background-color-3);
   }
-  h3 {
-    text-align: center;
-    font-size: 2rem;
-    color: #0f291e;
+  h2 {
+    font-size: 22px;
   }
-  .am-resp > p {
-    color: #2f5233;
-    font-size: 1rem;
-    font-style: oblique;
-    text-align: l;
-  }
-  .img-resp {
-    width: 20rem;
-  }
-  .ma-ver {
-    display: none;
-  }
-  .fts-am {
-    display: none;
-  }
-  .ma-resp {
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-  }
-  .h-ma {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #0f291e;
-  }
-  .ma-resp > p {
-    color: #2f5233;
-    font-size: 1rem;
-    font-style: oblique;
-    text-align: left;
+  .card-ma {
+    width: 100%;
+    height: 29rem;
+    font-size: 15px;
+    color: var(--background-color-2);
   }
   .img-ma {
-    width: 20rem;
+    width: 13.5rem;
+    height: 10rem;
+  }
+  .img-anuncio {
+    width: 7rem;
+    height: 34rem;
+    cursor: pointer;
   }
 }
