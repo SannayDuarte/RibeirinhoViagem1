@@ -1,24 +1,53 @@
 @import url('https://fonts.googleapis.com/css2? family= Oleo+Script:wght@700 & family= Pacifico & display=swap');
-
-/*nav*/
-header{
-  background: rgb(24,78,104);
-  background: linear-gradient(90deg, rgba(24,78,104,0.9444152661064426) 0%, rgba(87,202,133,1) 100%);
-  }
-  .tit{
-    color: #ddead1;
-    width: 55rem;
-    font-size: 2rem;
-  }
-  #links {
-    color: #4b6043;
-    font-size: 1.6rem;
-    font-style: italic;
-  }
-/*nav*/
-
+:root {
+  --background-color-1: #00004d;
+  --background-color-2: #102404;
+  --background-color-3: #f6f8f5;
+  --background-color-4: #00004d94;
+}
+h2 {
+  color: var(--background-color-2);
+  text-align: center;
+}
+h3,
+h4,
+h5 {
+  color: var(--background-color-2);
+}
+a {
+  color: var(--background-color-2);
+  cursor: pointer;
+}
+/*Cabeçanho*/
+.prin {
+  background: url(z.fundao.jpg) no-repeat center center/cover;
+  color: #eee;
+  background-color: rgba(54, 53, 53, 0.301);
+  background-blend-mode: color;
+}
+header {
+  background: url(zfundo.jpg) no-repeat center center/cover;
+  height: 30rem;
+}
+h1 {
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'Oleo Script', 'Pacifico', cursiva;
+  font-size: 8rem;
+  text-align: center;
+  margin: 0% 0% 0% 10%;
+  color: #0f0f5ad0;
+}
+#links {
+  color: var(--background-color-1);
+  font-size: 1.6rem;
+  font-style: negrito, italic, cursiva;
+}
+.btn {
+  background-color: var(--background-color-4);
+}
 /*login*/
-.modal-container{
+.modal-container {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -34,49 +63,42 @@ header{
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
-.modal-container.mostrar{
+.modal-container.mostrar {
   display: flex;
 }
-.acessar{
-   background: white;
+.acessar {
+  background: var(--background-color-3);
   width: 60%;
   min-width: 300px;
   padding: 40px;
-  border: 10px solid #0f291e;
-}
-.btn-entrar {
-  display: inline-block;
-  padding: 30px 60 px;
-  text-transform: uppercase;
-  background: #0f291e;
-  border-radius: 5px;
-  color:burlywood ;
-  transition: background 500ms ease;
+  border: 10px solid var(--background-color-1);
 }
 .fechar {
   width: 3rem;
   font-size: 1.5rem;
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: 20px;
+  color: var(--background-color-1);
   cursor: pointer;
 }
 /*login*/
+/*Cabeçanho*/
 
-#form{
+/*ajuda*/
+#form {
   padding: 50px;
 }
-h3{
+h3 {
   color: #041d13;
   text-align: center;
 }
-label{
-  color:#0f291e;
+label {
+  color: #0f291e;
 }
-
-button{
+button {
   display: inline-block;
-  padding: 10px ;
+  padding: 10px;
   text-transform: uppercase;
   background: #0f291e;
   font-size: 1rem;
@@ -84,10 +106,10 @@ button{
   color: rgb(137, 209, 197);
   transition: background 500ms ease;
 }
-.dados{
+.dados {
   padding: 1rem;
 }
-.relato{
+.relato {
   padding: 1rem;
 }
 /*ajuda*/
@@ -101,23 +123,24 @@ footer {
 }
 /*rodape*/
 
-  @media(max-width:900px) {
-    .tit{
-      color: #ddead1;
+@media (max-width: 900px) {
+  .tit {
+    color: #ddead1;
     width: 8rem;
   }
   #links {
     color: #ddead1;
   }
-    #maior{
-      display: none;
-    }#menor {
-      display: flex;
-      justify-content: center;
-    }h1{
+  #maior {
+    display: none;
+  }
+  #menor {
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
     display: flex;
     justify-content: center;
     font-size: 5rem;
   }
-    
 }

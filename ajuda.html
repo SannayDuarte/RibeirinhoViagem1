@@ -14,11 +14,8 @@
 <body>
     <!--cabeçalho home-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
             <div class="container-fluid">
-                <a class="navbar-brand pr" href="index.html">
-                    <h2 class="tit">Ribeirinho Viagem</h2>
-                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -26,13 +23,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" id="links" href="index.html">Pagina Inicial</a>
-                        <label class="nav-link active" id="links" onclick="abrirModal()">Acesse Sua Conta</label>
+                        <a class="nav-link" id="links" href="#" onclick="abrirModal()">Acessar Conta</a>
                         <a class="nav-link" id="links" href="cadastro.html">Cadastra-se</a>
+                        <a class="nav-link" id="links" href="ajuda.html">Ajuda</a>
+                        <a class="nav-link" id="links" href="nos.html">Sobre Nos</a>
                     </div>
                 </div>
             </div>
         </nav>
+        <h1>Ribeirinho<br>Viagem</h1>
         <!--Login-->
         <script>
             function abrirModal() {
@@ -48,26 +47,25 @@
         </script>
         <div id="modal-login" class="modal-container">
             <div class="acessar">
-                <button class="fechar">x</button>
-                <h4 class="subtitulo">Login</h4>
-                <form class="log">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="digite seu email "
-                        required>
+                <button class="fechar">X</button>
+                <h4 class="subtitulo">Acessar a Conta</h4>
+                <form>
+                    <label for="email" class="form-label">EMAIL</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu email " required>
 
-                    <label for="exampleInputPassword1" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1"
-                        placeholder="digite sua senha " required>
-                    <a href="4ajud.html" class="tx">Esqueci minha senha</a>
-                    <div class="my-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Manter conectado</label>
+                    <div class="my-3">
+                        <label for="Password" class="form-label">SENHA</label>
+                        <input type="password" class="form-control" id="Password" placeholder="Digite sua senha "
+                            maxlength="8" required>
+                        <input type="checkbox" class="form-check-input" id="conect">
+                        <label class="form-check-label" for="conect">Manter conectado</label>
                     </div>
+                    <a href="ajuda.html" class="tx">Esqueceu a senha.</a>
                     <div class="my-4">
-                        <label class="form-check-label" for="exampleCheck1"><a href="cadastro.html">SE
-                                CADASTRE</a></label>
+                        <label class="form-check-label" for="exampleCheck1">
+                            <a href="cadastro.html">Cadastre-se</a></label>
                     </div>
-                    <button class="btn-entrar" onclick="Entrou()"><a href="passagens.html">Entrar</a></button>
+                    <button class="entrar btn" onclick="Entrou()"><a href="passagens.html">Entrar</a></button>
                 </form>
             </div>
         </div>
@@ -109,29 +107,33 @@
 
     <!--RODAPÉ-->
     <footer>
-        <div class="nav justify-content-between container">
+        <address class="nav justify-content-between container">
             <div class="col-6 col-sm-5 col-lg-4">
-                <h6 class="tx-cinzae">Centrais de atendimento</h6>
+                <h6 class="tx-cinzae">
+                    Centrais de atendimento</h6>
                 <ul class="nav flex-column">
-                    <li>Av. Borges de Medeiros, 159<br>Porto Alegre/RS</li>
-                    <li>(51)3456-5555</li>
-                    <li class="nav-item"><a href="./HTML/ajuda.html" class="nav-link p-0 text-white">Entre em
+                    <li>Bairro Alvorada</li>
+                    <li>Manaus/Amazonas</li>
+                    <li class="nav-item"><a href="./HTML/ajuda.html" class="nav-link p-0 text-white">Entre
+                            em
                             contato</a>
                     </li>
                 </ul>
             </div>
             <div class="col-6 col-sm-5 col-lg-4">
                 <form>
-                    <h6>Deixe seu email para receber nossas ofertas!</h6>
+                    <h6>Entre no meu portfolio para ver outros projetos.</h6>
                     <div class="d-flex w-100 gap-2">
-                        <input id="newsletter1" type="text" class="form-control" placeholder="Digite seu email">
-                        <button class=" btn-light" type="button">Inscrever</button>
+                        <a id="newsletter1" class="form-control" href="https://sannay-duarte.vercel.app/">Portfolio
+                            Sannay Duarte</a>
                     </div>
                 </form>
             </div>
-        </div>
+        </address>
         <div class="row container">
-            <p class="m-0 text-center">© 2022 Company, Inc. All rights reserved.</p>
+            <p class="m-0 text-center">© 2023
+                Desenvolvido por Sannay Duarte.
+            </p>
         </div>
     </footer>
     <!--RODAPÉ-->
