@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Document</title>
-  <link rel="stylesheet" href="destinopas.css">
+  <link rel="stylesheet" href="comprar.css">
 </head>
 
 <body>
@@ -72,234 +72,351 @@
   <!--cabeçalho home-->
 
   <!--comprar-->
-  <form class="passagem">
+  <form class="passagem container">
     <h2>Comprar Passagem</h2>
     <main class="viagem">
-      <div class="dados">
-        <div id="pes">
-          <div class="mb-6">
-            <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome" name="nome" aria-describedby="nome"
-              placeholder="Escreva seu Nome Completo." required>
+      <div class="dados row mb-6">
+        <h5>Dados do Passageiro</h5>
+        <div class="mb-6">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" name="nome" aria-describedby="nome"
+            placeholder="Escreva seu Nome Completo." required>
+        </div>
+        <div class=" mb-6">
+          <label for="nome" class="form-label">Data de Nascimento</label>
+          <input type="date" class="form-control" id="nasc" name="nascimento" aria-describedby="nasc" required>
+        </div>
+        <div class="mb-6">
+          <label for="nome" class="form-label">Rg</label>
+          <input type="text" class="form-control" id="rg" name="rg" aria-describedby="rg" placeholder="Escreva seu Rg"
+            required>
+        </div>
+        <div class="mb-6">
+          <label for="nome" class="form-label">Cpf</label>
+          <input type="text" class="form-control" id="cpf" name="cpf" aria-describedby="cpf"
+            placeholder="Escreva seu Cpf" required>
+        </div>
+        <div class=" mb-6">
+          <label for="nome" class="form-label">Celular com DDD</label>
+          <input type="tel" class="form-control" id="celular" aria-describedby="tel" name="celular"
+            placeholder="digite seu numero com o ddd" required>
+        </div>
+        <div class="mb-6">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
+            <label class="form-check-label" for="flexRadioDefault1">
+              Feminino
+            </label>
           </div>
-          <div class=" mb-6">
-            <label for="nome" class="form-label">Data de Nascimento</label>
-            <input type="date" class="form-control" id="nasc" name="nascimento" aria-describedby="nasc" required>
-          </div>
-          <div class="mb-6">
-            <label for="nome" class="form-label">Rg</label>
-            <input type="text" class="form-control" id="rg" name="rg" aria-describedby="rg" placeholder="Escreva seu Rg"
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked
               required>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Masculino
+            </label>
           </div>
-          <div class="mb-6">
-            <label for="nome" class="form-label">Cpf</label>
-            <input type="text" class="form-control" id="cpf" name="cpf" aria-describedby="cpf"
-              placeholder="Escreva seu Cpf" required>
-          </div>
-          <div class=" mb-6">
-            <label for="nome" class="form-label">Celular com DDD</label>
-            <input type="tel" class="form-control" id="celular" aria-describedby="tel" name="celular"
-              placeholder="digite seu numero com o ddd" required>
-          </div>
-          <div class="mb-6">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
-              <label class="form-check-label" for="flexRadioDefault1">
-                Feminino
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked
-                required>
-              <label class="form-check-label" for="flexRadioDefault2">
-                Masculino
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked
-                required>
-              <label class="form-check-label" for="flexRadioDefault2">
-                Prefiro não declarar
-              </label>
-            </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked
+              required>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Prefiro não declarar
+            </label>
           </div>
         </div>
-        <div id="end">
-          <div class=" mb-6 ">
-            <label for="Cidade" class="form-label">CEP</label>
-            <input type="text" class="form-control" id="cep" name="cep" aria-describedby="Cep"
-              placeholder="digite o CEP">
-          </div>
-          <div class=" mb-6">
-            <label for="estado" class="form-label">Estado</label>
-            <input type="text" class="form-control" id="estado" name="estado" aria-describedby="estado"
-              placeholder="digite o nome do seu estado">
-          </div>
-          <div class=" mb-6 ">
-            <label for="cidade" class="form-label">Cidade</label>
-            <input type="text" class="form-control" id="cidade" name="estado" aria-describedby="cidade"
-              placeholder="digite o nome da sua cidade">
-          </div>
-          <div class=" mb-6">
-            <label for="bairro" class="form-label">Bairro</label>
-            <input type="text" class="form-control" id="bairro" aria-describedby="bairro"
-              placeholder="digite o nome do Bairro">
-          </div>
-          <div class=" mb-6">
-            <label for="Rua" class="form-label">Rua e N°</label>
-            <input type="text" class="form-control" id="rua" aria-describedby="rua"
-              placeholder="digite o Nome da sua Rua e o N° da sua Residencia">
-          </div>
+        <div class=" mb-6 ">
+          <label for="Cidade" class="form-label">CEP</label>
+          <input type="text" class="form-control" id="cep" name="cep" aria-describedby="Cep" placeholder="digite o CEP">
+        </div>
+        <div class=" mb-6">
+          <label for="estado" class="form-label">Estado</label>
+          <input type="text" class="form-control" id="estado" name="estado" aria-describedby="estado"
+            placeholder="digite o nome do seu estado">
+        </div>
+        <div class=" mb-6 ">
+          <label for="cidade" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="cidade" name="estado" aria-describedby="cidade"
+            placeholder="digite o nome da sua cidade">
+        </div>
+        <div class=" mb-6">
+          <label for="bairro" class="form-label">Bairro</label>
+          <input type="text" class="form-control" id="bairro" aria-describedby="bairro"
+            placeholder="digite o nome do Bairro">
+        </div>
+        <div class=" mb-6">
+          <label for="Rua" class="form-label">Rua e N°</label>
+          <input type="text" class="form-control" id="rua" aria-describedby="rua"
+            placeholder="digite o Nome da sua Rua e o N° da sua Residencia">
         </div>
       </div>
-      <div class="destino">
-        <p>Escolha o destino</p>
-        <form class="dest">
-          <div class="row">
-            <div class="col-6 col-md-4 mb-2">
-              <label for="Origem" class="form-label">Origem</label>
-              <input type="text" class="form-control" id="Origem">
-            </div>
-            <div class="col-6 col-md-4 mb-2">
-              <label for="Destino" class="form-label">Destino</label>
-              <input type="text" class="form-control" id="Destino">
-            </div>
-            <div class="col-6 col-md-2 mb-2">
-              <label for="dataI" class="form-label">Ida</label>
-              <input type="date" class="form-control" id="dataI">
-            </div>
-            <div class="col-6 col-md-2 mb-2">
-              <label for="dataV" class="form-label">Volta</label>
-              <input type="date" class="form-control" id="dataV">
-            </div>
-          </div>
-          <div class="row mb-6">
-            <div class="col-6 col-md-4 mb-2">
-              <label for="AdultoQ" class="form-label">Adultos a partir de 18
-                anos</label>
-              <input type="number" placeholder="0" class="form-control" id="AdultoQ">
-            </div>
-            <div class="col-6 col-md-4 mb-2">
-              <label for="CriancaQ" class="form-label">Crianças entre 2 e 17
-                anos</label>
-              <input type="number" placeholder="0" class="form-control" id="CriancaQ">
-            </div>
-            <div class="col-6 col-md-4 mb-2">
-              <label for="atendimento" class="form-label">Precisa de atendimento especial?</label>
-              <input type="text" placeholder="Sim ou Nao." class="form-control" id="atendimento" maxlength="4">
-            </div>
-          </div>
-        </form>
+
+      <div class="destino row mb-6">
+        <h5>Escolha o Destino</h5>
+        <div class="col-6 col-md-12 mb-2">
+          <label for="dataI" class="form-label">Origem</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Escolher a cidade de Origem</option>
+            <option value="4" class="aviao">Avião-Aeroporto Internacional Eduardo Gomes-Manaus</option>
+            <option value="5" class="aviao">Avião-Aeroporto Internacional de Tabatinga-Tabatinga</option>
+            <option value="6" class="aviao">Avião-Aeroporto Julio Belem-Parintins</option>
+            <option value="7" class="aviao">Avião-Aeroporto de Tefé-Tefé</option>
+            <option value="8" class="aviao">Avião-Aeroporto de Apuí-Apuí</option>
+            <option value="9" class="aviao">Avião-Aeroporto Palmeiras do Javali-Atalaia do Norte</option>
+            <option value="10" class="aviao">Avião-Aeroporto de Barcelos-Barcelos</option>
+            <option value="11" class="aviao">Avião-Aeroporto de Barreirinha-Barreirinha</option>
+            <option value="12" class="aviao">Avião-Aeroporto Novo Campo-Boca do Acre</option>
+            <option value="13" class="aviao">Avião-Aeroporto de Borba-Borba</option>
+            <option value="14" class="aviao">Avião-Aeroporto de Coari-Coari</option>
+            <option value="15" class="aviao">Avião-Aeroporto de Porto Urucu-Coari</option>
+            <option value="16" class="aviao">Avião-Aeroporto de Carauari-Carauari</option>
+            <option value="17" class="aviao">Avião-Aeroporto Bittencourt-Japurá</option>
+            <option value="18" class="aviao">Avião-Aeroporto de Eirunepé-Eirunepé</option>
+            <option value="19" class="aviao">Avião-Aeroporto de Fonte Boa-Fonte Boa</option>
+            <option value="20" class="aviao">Avião-Aeroporto de Humaitá-Humaitá</option>
+            <option value="21" class="aviao">Avião-Aeroporto de Lábrea-Lábrea</option>
+            <option value="22" class="aviao">Avião-Aeroporto de Maués- Maués</option>
+            <option value="23" class="aviao">Avião-Aeroporto de Manicoré- Manicoré</option>
+            <option value="24" class="aviao">Avião-Aeroporto de Nova Olinda do Norte- Nova Olinda do Norte
+            </option>
+            <option value="25" class="aviao">Avião-Aeroporto de Tapuruquara- Santa Isabel do Rio Negro</option>
+            <option value="26" class="aviao">Avião-Aeroporto Senadora Eunice Michiles- São Paulo de Olivença
+            </option>
+            <option value="27" class="aviao">Avião-Aeroporto de Novo Aripuanã- Novo Aripuanã</option>
+            <option value="28" class="aviao">Avião-Aeroporto Ipiranga- Santo Antônio do Içá</option>
+            <option value="29" class="aviao">Avião-Aeroporto de Pauini- Pauini</option>
+            <option value="30" class="aviao">Avião-Aeroporto de Urucará- Urucará</option>
+            <option value="31" class="onibus">Onibus-Autazes</option>
+            <option value="32" class="onibus">Onibus-Careiro</option>
+            <option value="33" class="onibus">Onibus-Careiro da Várzea</option>
+            <option value="34" class="onibus">Onibus-Iranduba</option>
+            <option value="35" class="onibus">Onibus-Itacoatiara</option>
+            <option value="36" class="onibus">Onibus-Itapiranga</option>
+            <option value="37" class="onibus">Onibus-Manacapuru</option>
+            <option value="38" class="onibus">Onibus-Manaquiri</option>
+            <option value="39" class="onibus">Onibus-Manaus</option>
+            <option value="40" class="onibus">Onibus-Novo Airão</option>
+            <option value="41" class="onibus">Onibus-Presidente Figueiredo</option>
+            <option value="42" class="onibus">Onibus-Rio Preto da Eva</option>
+            <option value="43" class="onibus">Onibus-Silves</option>
+            <option value="44" class="barco">Barco-Alvarães</option>
+            <option value="45" class="barco">Barco-Japurá</option>
+            <option value="46" class="barco">Barco-Amaturá</option>
+            <option value="47" class="barco">Barco-Juruá</option>
+            <option value="48" class="barco">Barco-Anamã</option>
+            <option value="49" class="barco">Barco-Jutaí</option>
+            <option value="50" class="barco">Barco-Anori</option>
+            <option value="51" class="barco">Barco-Lábrea</option>
+            <option value="52" class="barco">Barco-Apuí</option>
+            <option value="53" class="barco">Barco-Atalaia do Norte</option>
+            <option value="54" class="barco">Barco-Manaus</option>
+            <option value="55" class="barco">Barco-Barcelos</option>
+            <option value="56" class="barco">Barco-Manicoré</option>
+            <option value="57" class="barco">Barco-Barreirinha</option>
+            <option value="58" class="barco">Barco-Maraã</option>
+            <option value="59" class="barco">Barco-Benjamin Constant</option>
+            <option value="60" class="barco">Barco-Maués</option>
+            <option value="61" class="barco">Barco-Beruri</option>
+            <option value="62" class="barco">Barco-Nhamundá</option>
+            <option value="63" class="barco">Barco-Boa Vista do Ramos</option>
+            <option value="64" class="barco">Barco-Nova Olinda do Norte</option>
+            <option value="65" class="barco">Barco-Boca do Acre</option>
+            <option value="66" class="barco">Barco-Borba Novo</option>
+            <option value="67" class="barco">Barco-Aripuanã</option>
+            <option value="68" class="barco">Barco-Caapiranga</option>
+            <option value="69" class="barco">Barco-Parintins</option>
+            <option value="70" class="barco">Barco-Canutama</option>
+            <option value="71" class="barco">Barco-Pauini</option>
+            <option value="72" class="barco">Barco-Carauari</option>
+            <option value="73" class="barco">Barco-Santa Isabel do Rio Negro</option>
+            <option value="74" class="barco">Barco-Coari</option>
+            <option value="75" class="barco">Barco-Santo Antônio do Içá</option>
+            <option value="76" class="barco">Barco-Codajás</option>
+            <option value="77" class="barco">Barco-São Gabriel da Cachoeira</option>
+            <option value="78" class="barco">Barco-Eirunepé</option>
+            <option value="79" class="barco">Barco-São Paulo de Olivença</option>
+            <option value="80" class="barco">Barco-Envira</option>
+            <option value="81" class="barco">Barco-São Sebastião do Uatumã</option>
+            <option value="82" class="barco">Barco-Fonte Boa</option>
+            <option value="83" class="barco">Barco-Silves</option>
+            <option value="84" class="barco">Barco-Guajará</option>
+            <option value="85" class="barco">Barco-Tabatinga</option>
+            <option value="86" class="barco">Barco-Humaitá</option>
+            <option value="87" class="barco">Barco-Tapauá</option>
+            <option value="88" class="barco">Barco-Ipixuna</option>
+            <option value="89" class="barco">Barco-Tefé</option>
+            <option value="90" class="barco">Barco-Tonantins</option>
+            <option value="91" class="barco">Barco-Uarini</option>
+            <option value="92" class="barco">Barco-Itamarati</option>
+            <option value="93" class="barco">Barco-Urucará</option>
+            <option value="94" class="barco">Barco-Itapiranga</option>
+            <option value="95" class="barco">Barco-Urucurituba</option>
+          </select>
+        </div>
+        <div class="col-6 col-md-12 mb-2">
+          <label for="dataI" class="form-label">Destino</label>
+          <select class="form-select" aria-label="Default select" name="valor" id="valor" onclick="chamar()">
+            <option selected>Escolher Destino</option>
+            <option value="67,50" class="Passeio pro">Passeio por Manaus/90,00-25%</option>
+            <option value="88,00" class="Passeio pro">Safari Amazonico/110,00-20%</option>
+            <option value="52,50" class="Passeio pro">Novo Airao Passeio/70,00-25%</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto Internacional Eduardo Gomes-Manaus/700,00</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto Internacional de Tabatinga-Tabatinga/700,00
+            </option>
+            <option value="595,00" class="aviao pro">Avião-Aeroporto Julio Belem-Parintins/700,00-15%</option>
+            <option value="595,00" class="aviao pro">Avião-Aeroporto de Tefé-Tefé/700,00-15%</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto de Apuí-Apuí/700,00</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto Palmeiras do Javali-Atalaia do Norte/700,00
+            </option>
+            <option value="700,00" class="aviao">Avião-Aeroporto de Barcelos-Barcelos/700,00</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto de Barreirinha-Barreirinha/700,00</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto Novo Campo-Boca do Acre/700,00</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto de Borba-Borba/700,00</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto de Coari-Coari/700,00</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto de Porto Urucu-Coari/700,00</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto de Carauari-Carauari/700,00</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto Bittencourt-Japurá/700,00</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto de Eirunepé-Eirunepé/700,00</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto de Fonte Boa-Fonte Boa/700,00</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto de Humaitá-Humaitá/700,00</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto de Lábrea-Lábrea/700,00</option>
+            <option value="560,00" class="aviao pro">Avião-Aeroporto de Maués- Maués/700,00-20%</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto de Manicoré- Manicoré/700,00</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto de Nova Olinda do Norte- Nova Olinda do
+              Norte/700,00
+            </option>
+            <option value="700,00" class="aviao">Avião-Aeroporto de Tapuruquara- Santa Isabel do Rio Negro/700,00
+            </option>
+            <option value="700,00" class="aviao">Avião-Aeroporto Senadora Eunice Michiles- São Paulo de
+              Olivença/700,00
+            </option>
+            <option value="700,00" class="aviao">Avião-Aeroporto de Novo Aripuanã- Novo Aripuanã/700,00</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto Ipiranga- Santo Antônio do Içá/700,00</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto de Pauini- Pauini/700,00</option>
+            <option value="700,00" class="aviao">Avião-Aeroporto de Urucará- Urucará/700,00</option>
+            <option value="70,00" class="onibus">Onibus-Autazes-70,00</option>
+            <option value="70,00" class="onibus">Onibus-Careiro-70,00</option>
+            <option value="70,00" class="onibus">Onibus-Careiro da Várzea-70,00</option>
+            <option value="70,00" class="onibus">Onibus-Iranduba-70,00</option>
+            <option value="70,00" class="onibus">Onibus-Itacoatiara-70,00</option>
+            <option value="70,00" class="onibus">Onibus-Itapiranga-70,00</option>
+            <option value="70,00" class="onibus">Onibus-Manacapuru-70,00</option>
+            <option value="70,00" class="onibus">Onibus-Manaquiri-70,00</option>
+            <option value="70,00" class="onibus">Onibus-Manaus-70,00</option>
+            <option value="70,00" class="onibus">Onibus-Novo Airão-70,00</option>
+            <option value="70,00" class="onibus">Onibus-Presidente Figueiredo-70,00</option>
+            <option value="70,00" class="onibus">Onibus-Rio Preto da Eva-70,00</option>
+            <option value="70,00" class="onibus">Onibus-Silves-70,00</option>
+            <option value="150,00" class="barco">Barco-Alvarães-150,00</option>
+            <option value="150,00" class="barco">Barco-Japurá-150,00</option>
+            <option value="150,00" class="barco">Barco-Amaturá-150,00</option>
+            <option value="150,00" class="barco">Barco-Juruá-150,00</option>
+            <option value="150,00" class="barco">Barco-Anamã-150,00</option>
+            <option value="150,00" class="barco">Barco-Jutaí-150,00</option>
+            <option value="150,00" class="barco">Barco-Anori-150,00</option>
+            <option value="150,00" class="barco">Barco-Lábrea-150,00</option>
+            <option value="150,00" class="barco">Barco-Apuí-150,00</option>
+            <option value="150,00" class="barco">Barco-Atalaia do Norte-150,00</option>
+            <option value="150,00" class="barco">Barco-Manaus-170,00</option>
+            <option value="150,00" class="barco">Barco-Barcelos-150,00</option>
+            <option value="150,00" class="barco">Barco-Manicoré-150,00</option>
+            <option value="150,00" class="barco">Barco-Barreirinha-150,00</option>
+            <option value="150,00" class="barco">Barco-Maraã-150,00</option>
+            <option value="150,00" class="barco">Barco-Benjamin Constant-150,00</option>
+            <option value="150,00" class="barco">Barco-Maués-150,00</option>
+            <option value="150,00" class="barco">Barco-Beruri-150,00</option>
+            <option value="150,00" class="barco">Barco-Nhamundá-150,00</option>
+            <option value="150,00" class="barco">Barco-Boa Vista do Ramos-150,00</option>
+            <option value="150,00" class="barco">Barco-Nova Olinda do Norte-150,00</option>
+            <option value="150,00" class="barco">Barco-Boca do Acre-150,00</option>
+            <option value="150,00" class="barco">Barco-Borba Novo-150,00</option>
+            <option value="150,00" class="barco">Barco-Aripuanã-150,00</option>
+            <option value="150,00" class="barco">Barco-Caapiranga-150,00</option>
+            <option value="150,00" class="barco">Barco-Parintins-150,00</option>
+            <option value="150,00" class="barco">Barco-Canutama-150,00</option>
+            <option value="150,00" class="barco">Barco-Pauini-150,00</option>
+            <option value="150,00" class="barco">Barco-Carauari-150,00</option>
+            <option value="150,00" class="barco">Barco-Santa Isabel do Rio Negro-150,00</option>
+            <option value="120,00" class="barco pro">Barco-Coari/150,00-20%</option>
+            <option value="150,00" class="barco">Barco-Santo Antônio do Içá-150,00</option>
+            <option value="120,00" class="barco pro">Barco-Codajás/150,00-20%</option>
+            <option value="150,00" class="barco">Barco-São Gabriel da Cachoeira-150,00</option>
+            <option value="150,00" class="barco">Barco-Eirunepé-150,00</option>
+            <option value="150,00" class="barco">Barco-São Paulo de Olivença-150,00</option>
+            <option value="150,00" class="barco">Barco-Envira-150,00</option>
+            <option value="150,00" class="barco">Barco-São Sebastião do Uatumã-150,00</option>
+            <option value="150,00" class="barco">Barco-Fonte Boa-150,00</option>
+            <option value="150,00" class="barco">Barco-Silves-150,00</option>
+            <option value="150,00" class="barco">Barco-Guajará-150,00</option>
+            <option value="150,00" class="barco">Barco-Tabatinga-150,00</option>
+            <option value="150,00" class="barco">Barco-Humaitá-150,00</option>
+            <option value="150,00" class="barco">Barco-Tapauá-150,00</option>
+            <option value="150,00" class="barco">Barco-Ipixuna-150,00</option>
+            <option value="150,00" class="barco">Barco-Tefé-150,00</option>
+            <option value="150,00" class="barco">Barco-Tonantins-150,00</option>
+            <option value="120,00" class="barco pro">Barco-Uarini 150,00-20%</option>
+            <option value="150,00" class="barco">Barco-Itamarati-150,00</option>
+            <option value="150,00" class="barco">Barco-Urucará-150,00</option>
+            <option value="150,00" class="barco">Barco-Itapiranga-150,00</option>
+            <option value="150,00" class="barco">Barco-Urucurituba-150,00</option>
+          </select>
+        </div>
       </div>
 
-      <div class="pagamento">
-        <p>Dados do pagamento.</p>
-        <form class="dest">
-          <div class="row">
-            <div class="col-6 col-md-4 mb-2">
-              <label for="inputAdult" class="form-label">Forma de pagamento.</label>
-              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                <option value="1">Cartão de Credito.</option>
-                <option value="2">Cartão de Debito</option>
-              </select>
-            </div>
-            <div class="col-6 col-md-4 mb-2">
-              <label for="inputAdult" class="form-label">Bandeira</label>
-              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                <option value="1">Mastercard</option>
-                <option value="2">Visa</option>
-                <option value="3">Hipercard</option>
-                <option value="4">HeloCredito</option>
-              </select>
-            </div>
-            <div class="col-6 col-md-4 mb-2">
-              <label for="inputDate" class="form-label">Quantidade de Parcela</label>
-              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                <option value="1">Mastercard</option>
-                <option value="2">Visa</option>
-                <option value="3">Hipercard</option>
-                <option value="4">HeloCredito</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-6 col-md-4 mb-2">
-              <label for="inputAdult" class="form-label">Forma de pagamento.</label>
-              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                <option value="1">Cartão de Credito.</option>
-                <option value="2">Cartão de Debito</option>
-              </select>
-            </div>
-            <div class="col-6 col-md-4 mb-2">
-              <label for="inputAdult" class="form-label">Bandeira</label>
-              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                <option value="1">Mastercard</option>
-                <option value="2">Visa</option>
-                <option value="3">Hipercard</option>
-                <option value="4">HeloCredito</option>
-              </select>
-            </div>
-            <div class="col-6 col-md-4 mb-2">
-              <label for="inputDate" class="form-label">Quantidade de Parcela</label>
-              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                <option value="1">Mastercard</option>
-                <option value="2">Visa</option>
-                <option value="3">Hipercard</option>
-                <option value="4">HeloCredito</option>
-              </select>
-            </div>
-          </div>
-
-        </form>
+      <div class="comprar row mb-6">
+        <h5>Dados para o Pagamento.</h5>
+        <div class="col-6 col-md-4 mb-2">
+          <label for="inputAdult" class="form-label">Forma de pagamento.</label>
+          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+            <option value="1">Cartão de Credito.</option>
+            <option value="2">Cartão de Debito</option>
+          </select>
+        </div>
+        <div class="col-6 col-md-4 mb-2">
+          <label for="inputAdult" class="form-label">Bandeira</label>
+          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+            <option value="1">Mastercard</option>
+            <option value="2">Visa</option>
+            <option value="3">Hipercard</option>
+            <option value="4">HeloCredito</option>
+          </select>
+        </div>
+        <div class="col-6 col-md-4 mb-2">
+          <label for="inputDate" class="form-label">Quantidade de Parcela</label>
+          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+            <option value="1">Mastercard</option>
+            <option value="2">Visa</option>
+            <option value="3">Hipercard</option>
+            <option value="4">HeloCredito</option>
+          </select>
+        </div>
       </div>
-      <div class="comprar">
+
+      <div class="finalizar">
         <div class="dados-comprar">
           <label for="email" class="form-label">Email</label>
           <input type="email" class="form-control" id="email" name="email" id="email" aria-describedby="emailHelp"
             placeholder="Escreva seu email." />
-
           <label for="password" id="password" name="password" class="form-label">Senha</label>
           <input type="password" class="form-control" placeholder="Escreva sua senha" maxlength="8">
         </div>
+        <div class="col-6 col-md-12 mb-2">
+          <label for="" class="form-label">Valor Total</label>
+          <h5 id="digito"></h5>
+        </div>
+        <div class="col-6 col-md-6 mb-2">
+          <input class="btn" type="reset" />
+          <a type="button" class="btn" href="comprar.html">Comprar Passagem</a>
+        </div>
+        <script type=" text/javascript">
+            var captar = "";
+            function chamar() {
+            captar = document.getElementById('valor').value;
+            document.getElementById('digito').innerHTML = captar;
+            };
+            </script>
       </div>
-
     </main>
   </form>
-  <!--conprar-<div class="termo container">
-          <label class="condi" onclick="abrirModall()"> Aceita os Termos e Condições?</label>
-          <div id="modal-termo" class="modal-container-termo modal-dialog-scrollable">
-            <div class="termo">
-              <button class="fechar">x</button>
-              <h4 class="subtitulo">Termos e Condições de Uso e Compra</h4>
-              <p class="text-modal">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt
-                mollit anim id est laborum.
-              </p>
-              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required>
-              <label class="form-check-label" for="flexSwitchCheckDefault">Aceito os Termos e Condições de Uso</label>
-            </div>
-          </div>
-          <script>
-            function abrirModall() {
-              const modal = document.getElementById("modal-termo")
-              modal.classList.add("mostrarr")
-
-              modal.addEventListener("click", (e) => {
-                if (e.target.id == "modal-termo" || e.target.className == "fechar") {
-                  modal.classList.remove("mostrarr");
-                }
-              });
-            }
-          </script>
-        </div>->
-
-  <!--RODAPÉ-->
+  <!--comprar-->
 
   <!--RODAPÉ-->
   <footer>

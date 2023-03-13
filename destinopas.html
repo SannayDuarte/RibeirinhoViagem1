@@ -79,16 +79,6 @@
         <div class="row">
           <div class="row mb-6">
             <div class="col-6 col-md-12 mb-2">
-              <label for="Nome" class="form-label">Nome Completo</label>
-              <input type="text" placeholder="Nome Completo" class="form-control" id="Nome">
-            </div>
-            <div class="col-6 col-md-12 mb-2">
-              <label for="number" class="form-label">Contato</label>
-              <input type="number" placeholder="Contato com o DDD" class="form-control" id="number">
-            </div>
-          </div>
-          <div class="row mb-6">
-            <div class="col-6 col-md-12 mb-2">
               <label for="dataI" class="form-label">Origem</label>
               <select class="form-select" aria-label="Default select example">
                 <option selected>Escolher a cidade de Origem</option>
@@ -192,104 +182,108 @@
               <label for="dataI" class="form-label">Destino</label>
               <select class="form-select" aria-label="Default select" name="valor" id="valor" onclick="chamar()">
                 <option selected>Escolher Destino</option>
-                <option value="1" class="Passeio pro">Passeio por Manaus/90,00-25%</option>
-                <option value="2" class="Passeio pro">Safari Amazonico/110,00-20%</option>
-                <option value="3" class="Passeio pro">Novo Airao Passeio/70,00-25%</option>
-                <option value="4" class="aviao">Avião-Aeroporto Internacional Eduardo Gomes-Manaus/700,00</option>
-                <option value="5" class="aviao">Avião-Aeroporto Internacional de Tabatinga-Tabatinga/700,00</option>
-                <option value="6" class="aviao pro">Avião-Aeroporto Julio Belem-Parintins/700,00-15%</option>
-                <option value="7" class="aviao pro">Avião-Aeroporto de Tefé-Tefé/700,00-15%</option>
-                <option value="8" class="aviao">Avião-Aeroporto de Apuí-Apuí/700,00</option>
-                <option value="9" class="aviao">Avião-Aeroporto Palmeiras do Javali-Atalaia do Norte/700,00</option>
-                <option value="10" class="aviao">Avião-Aeroporto de Barcelos-Barcelos/700,00</option>
-                <option value="11" class="aviao">Avião-Aeroporto de Barreirinha-Barreirinha/700,00</option>
-                <option value="12" class="aviao">Avião-Aeroporto Novo Campo-Boca do Acre/700,00</option>
-                <option value="13" class="aviao">Avião-Aeroporto de Borba-Borba/700,00</option>
-                <option value="14" class="aviao">Avião-Aeroporto de Coari-Coari/700,00</option>
-                <option value="15" class="aviao">Avião-Aeroporto de Porto Urucu-Coari/700,00</option>
-                <option value="16" class="aviao">Avião-Aeroporto de Carauari-Carauari/700,00</option>
-                <option value="17" class="aviao">Avião-Aeroporto Bittencourt-Japurá/700,00</option>
-                <option value="18" class="aviao">Avião-Aeroporto de Eirunepé-Eirunepé/700,00</option>
-                <option value="19" class="aviao">Avião-Aeroporto de Fonte Boa-Fonte Boa/700,00</option>
-                <option value="20" class="aviao">Avião-Aeroporto de Humaitá-Humaitá/700,00</option>
-                <option value="21" class="aviao">Avião-Aeroporto de Lábrea-Lábrea/700,00</option>
-                <option value="22" class="aviao pro">Avião-Aeroporto de Maués- Maués/700,00-20%</option>
-                <option value="23" class="aviao">Avião-Aeroporto de Manicoré- Manicoré/700,00</option>
-                <option value="24" class="aviao">Avião-Aeroporto de Nova Olinda do Norte- Nova Olinda do Norte/700,00
+                <option value="67,50" class="Passeio pro">Passeio por Manaus/90,00-25%</option>
+                <option value="88,00" class="Passeio pro">Safari Amazonico/110,00-20%</option>
+                <option value="52,50" class="Passeio pro">Novo Airao Passeio/70,00-25%</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto Internacional Eduardo Gomes-Manaus/700,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto Internacional de Tabatinga-Tabatinga/700,00
                 </option>
-                <option value="25" class="aviao">Avião-Aeroporto de Tapuruquara- Santa Isabel do Rio Negro/700,00
+                <option value="595,00" class="aviao pro">Avião-Aeroporto Julio Belem-Parintins/700,00-15%</option>
+                <option value="595,00" class="aviao pro">Avião-Aeroporto de Tefé-Tefé/700,00-15%</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto de Apuí-Apuí/700,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto Palmeiras do Javali-Atalaia do Norte/700,00
                 </option>
-                <option value="26" class="aviao">Avião-Aeroporto Senadora Eunice Michiles- São Paulo de Olivença/700,00
+                <option value="700,00" class="aviao">Avião-Aeroporto de Barcelos-Barcelos/700,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto de Barreirinha-Barreirinha/700,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto Novo Campo-Boca do Acre/700,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto de Borba-Borba/700,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto de Coari-Coari/700,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto de Porto Urucu-Coari/700,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto de Carauari-Carauari/700,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto Bittencourt-Japurá/700,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto de Eirunepé-Eirunepé/700,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto de Fonte Boa-Fonte Boa/700,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto de Humaitá-Humaitá/700,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto de Lábrea-Lábrea/700,00</option>
+                <option value="560,00" class="aviao pro">Avião-Aeroporto de Maués- Maués/700,00-20%</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto de Manicoré- Manicoré/700,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto de Nova Olinda do Norte- Nova Olinda do
+                  Norte/700,00
                 </option>
-                <option value="27" class="aviao">Avião-Aeroporto de Novo Aripuanã- Novo Aripuanã/700,00</option>
-                <option value="28" class="aviao">Avião-Aeroporto Ipiranga- Santo Antônio do Içá/700,00</option>
-                <option value="29" class="aviao">Avião-Aeroporto de Pauini- Pauini/700,00</option>
-                <option value="30" class="aviao">Avião-Aeroporto de Urucará- Urucará/700,00</option>
-                <option value="31" class="onibus">Onibus-Autazes-70,00</option>
-                <option value="32" class="onibus">Onibus-Careiro-70,00</option>
-                <option value="33" class="onibus">Onibus-Careiro da Várzea-70,00</option>
-                <option value="34" class="onibus">Onibus-Iranduba-70,00</option>
-                <option value="35" class="onibus">Onibus-Itacoatiara-70,00</option>
-                <option value="36" class="onibus">Onibus-Itapiranga-70,00</option>
-                <option value="37" class="onibus">Onibus-Manacapuru-70,00</option>
-                <option value="38" class="onibus">Onibus-Manaquiri-70,00</option>
-                <option value="39" class="onibus">Onibus-Manaus-70,00</option>
-                <option value="40" class="onibus">Onibus-Novo Airão-70,00</option>
-                <option value="41" class="onibus">Onibus-Presidente Figueiredo-70,00</option>
-                <option value="42" class="onibus">Onibus-Rio Preto da Eva-70,00</option>
-                <option value="43" class="onibus">Onibus-Silves-70,00</option>
-                <option value="44" class="barco">Barco-Alvarães-150,00</option>
-                <option value="45" class="barco">Barco-Japurá-150,00</option>
-                <option value="46" class="barco">Barco-Amaturá-150,00</option>
-                <option value="47" class="barco">Barco-Juruá-150,00</option>
-                <option value="48" class="barco">Barco-Anamã-150,00</option>
-                <option value="49" class="barco">Barco-Jutaí-150,00</option>
-                <option value="50" class="barco">Barco-Anori-150,00</option>
-                <option value="51" class="barco">Barco-Lábrea-150,00</option>
-                <option value="52" class="barco">Barco-Apuí-150,00</option>
-                <option value="53" class="barco">Barco-Atalaia do Norte-150,00</option>
-                <option value="54" class="barco">Barco-Manaus-170,00</option>
-                <option value="55" class="barco">Barco-Barcelos-150,00</option>
-                <option value="56" class="barco">Barco-Manicoré-150,00</option>
-                <option value="57" class="barco">Barco-Barreirinha-150,00</option>
-                <option value="58" class="barco">Barco-Maraã-150,00</option>
-                <option value="59" class="barco">Barco-Benjamin Constant-150,00</option>
-                <option value="60" class="barco">Barco-Maués-150,00</option>
-                <option value="61" class="barco">Barco-Beruri-150,00</option>
-                <option value="62" class="barco">Barco-Nhamundá-150,00</option>
-                <option value="63" class="barco">Barco-Boa Vista do Ramos-150,00</option>
-                <option value="64" class="barco">Barco-Nova Olinda do Norte-150,00</option>
-                <option value="65" class="barco">Barco-Boca do Acre-150,00</option>
-                <option value="66" class="barco">Barco-Borba Novo-150,00</option>
-                <option value="67" class="barco">Barco-Aripuanã-150,00</option>
-                <option value="68" class="barco">Barco-Caapiranga-150,00</option>
-                <option value="69" class="barco">Barco-Parintins-150,00</option>
-                <option value="70" class="barco">Barco-Canutama-150,00</option>
-                <option value="71" class="barco">Barco-Pauini-150,00</option>
-                <option value="72" class="barco">Barco-Carauari-150,00</option>
-                <option value="73" class="barco">Barco-Santa Isabel do Rio Negro-150,00</option>
-                <option value="74" class="barco pro">Barco-Coari/150,00-20%</option>
-                <option value="75" class="barco">Barco-Santo Antônio do Içá-150,00</option>
-                <option value="76" class="barco pro">Barco-Codajás/150,00-20%</option>
-                <option value="77" class="barco">Barco-São Gabriel da Cachoeira-150,00</option>
-                <option value="78" class="barco">Barco-Eirunepé-150,00</option>
-                <option value="79" class="barco">Barco-São Paulo de Olivença-150,00</option>
-                <option value="80" class="barco">Barco-Envira-150,00</option>
-                <option value="81" class="barco">Barco-São Sebastião do Uatumã-150,00</option>
-                <option value="82" class="barco">Barco-Fonte Boa-150,00</option>
-                <option value="83" class="barco">Barco-Silves-150,00</option>
-                <option value="84" class="barco">Barco-Guajará-150,00</option>
-                <option value="85" class="barco">Barco-Tabatinga-150,00</option>
-                <option value="86" class="barco">Barco-Humaitá-150,00</option>
-                <option value="87" class="barco">Barco-Tapauá-150,00</option>
-                <option value="88" class="barco">Barco-Ipixuna-150,00</option>
-                <option value="89" class="barco">Barco-Tefé-150,00</option>
-                <option value="90" class="barco">Barco-Tonantins-150,00</option>
-                <option value="91" class="barco pro">Barco-Uarini 150,00-20%</option>
-                <option value="92" class="barco">Barco-Itamarati-150,00</option>
-                <option value="93" class="barco">Barco-Urucará-150,00</option>
-                <option value="94" class="barco">Barco-Itapiranga-150,00</option>
-                <option value="95" class="barco">Barco-Urucurituba-150,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto de Tapuruquara- Santa Isabel do Rio Negro/700,00
+                </option>
+                <option value="700,00" class="aviao">Avião-Aeroporto Senadora Eunice Michiles- São Paulo de
+                  Olivença/700,00
+                </option>
+                <option value="700,00" class="aviao">Avião-Aeroporto de Novo Aripuanã- Novo Aripuanã/700,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto Ipiranga- Santo Antônio do Içá/700,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto de Pauini- Pauini/700,00</option>
+                <option value="700,00" class="aviao">Avião-Aeroporto de Urucará- Urucará/700,00</option>
+                <option value="70,00" class="onibus">Onibus-Autazes-70,00</option>
+                <option value="70,00" class="onibus">Onibus-Careiro-70,00</option>
+                <option value="70,00" class="onibus">Onibus-Careiro da Várzea-70,00</option>
+                <option value="70,00" class="onibus">Onibus-Iranduba-70,00</option>
+                <option value="70,00" class="onibus">Onibus-Itacoatiara-70,00</option>
+                <option value="70,00" class="onibus">Onibus-Itapiranga-70,00</option>
+                <option value="70,00" class="onibus">Onibus-Manacapuru-70,00</option>
+                <option value="70,00" class="onibus">Onibus-Manaquiri-70,00</option>
+                <option value="70,00" class="onibus">Onibus-Manaus-70,00</option>
+                <option value="70,00" class="onibus">Onibus-Novo Airão-70,00</option>
+                <option value="70,00" class="onibus">Onibus-Presidente Figueiredo-70,00</option>
+                <option value="70,00" class="onibus">Onibus-Rio Preto da Eva-70,00</option>
+                <option value="70,00" class="onibus">Onibus-Silves-70,00</option>
+                <option value="150,00" class="barco">Barco-Alvarães-150,00</option>
+                <option value="150,00" class="barco">Barco-Japurá-150,00</option>
+                <option value="150,00" class="barco">Barco-Amaturá-150,00</option>
+                <option value="150,00" class="barco">Barco-Juruá-150,00</option>
+                <option value="150,00" class="barco">Barco-Anamã-150,00</option>
+                <option value="150,00" class="barco">Barco-Jutaí-150,00</option>
+                <option value="150,00" class="barco">Barco-Anori-150,00</option>
+                <option value="150,00" class="barco">Barco-Lábrea-150,00</option>
+                <option value="150,00" class="barco">Barco-Apuí-150,00</option>
+                <option value="150,00" class="barco">Barco-Atalaia do Norte-150,00</option>
+                <option value="150,00" class="barco">Barco-Manaus-170,00</option>
+                <option value="150,00" class="barco">Barco-Barcelos-150,00</option>
+                <option value="150,00" class="barco">Barco-Manicoré-150,00</option>
+                <option value="150,00" class="barco">Barco-Barreirinha-150,00</option>
+                <option value="150,00" class="barco">Barco-Maraã-150,00</option>
+                <option value="150,00" class="barco">Barco-Benjamin Constant-150,00</option>
+                <option value="150,00" class="barco">Barco-Maués-150,00</option>
+                <option value="150,00" class="barco">Barco-Beruri-150,00</option>
+                <option value="150,00" class="barco">Barco-Nhamundá-150,00</option>
+                <option value="150,00" class="barco">Barco-Boa Vista do Ramos-150,00</option>
+                <option value="150,00" class="barco">Barco-Nova Olinda do Norte-150,00</option>
+                <option value="150,00" class="barco">Barco-Boca do Acre-150,00</option>
+                <option value="150,00" class="barco">Barco-Borba Novo-150,00</option>
+                <option value="150,00" class="barco">Barco-Aripuanã-150,00</option>
+                <option value="150,00" class="barco">Barco-Caapiranga-150,00</option>
+                <option value="150,00" class="barco">Barco-Parintins-150,00</option>
+                <option value="150,00" class="barco">Barco-Canutama-150,00</option>
+                <option value="150,00" class="barco">Barco-Pauini-150,00</option>
+                <option value="150,00" class="barco">Barco-Carauari-150,00</option>
+                <option value="150,00" class="barco">Barco-Santa Isabel do Rio Negro-150,00</option>
+                <option value="120,00" class="barco pro">Barco-Coari/150,00-20%</option>
+                <option value="150,00" class="barco">Barco-Santo Antônio do Içá-150,00</option>
+                <option value="120,00" class="barco pro">Barco-Codajás/150,00-20%</option>
+                <option value="150,00" class="barco">Barco-São Gabriel da Cachoeira-150,00</option>
+                <option value="150,00" class="barco">Barco-Eirunepé-150,00</option>
+                <option value="150,00" class="barco">Barco-São Paulo de Olivença-150,00</option>
+                <option value="150,00" class="barco">Barco-Envira-150,00</option>
+                <option value="150,00" class="barco">Barco-São Sebastião do Uatumã-150,00</option>
+                <option value="150,00" class="barco">Barco-Fonte Boa-150,00</option>
+                <option value="150,00" class="barco">Barco-Silves-150,00</option>
+                <option value="150,00" class="barco">Barco-Guajará-150,00</option>
+                <option value="150,00" class="barco">Barco-Tabatinga-150,00</option>
+                <option value="150,00" class="barco">Barco-Humaitá-150,00</option>
+                <option value="150,00" class="barco">Barco-Tapauá-150,00</option>
+                <option value="150,00" class="barco">Barco-Ipixuna-150,00</option>
+                <option value="150,00" class="barco">Barco-Tefé-150,00</option>
+                <option value="150,00" class="barco">Barco-Tonantins-150,00</option>
+                <option value="120,00" class="barco pro">Barco-Uarini 150,00-20%</option>
+                <option value="150,00" class="barco">Barco-Itamarati-150,00</option>
+                <option value="150,00" class="barco">Barco-Urucará-150,00</option>
+                <option value="150,00" class="barco">Barco-Itapiranga-150,00</option>
+                <option value="150,00" class="barco">Barco-Urucurituba-150,00</option>
               </select>
             </div>
           </div>
@@ -299,23 +293,24 @@
               <input type="date" class="form-control" id="dataI">
             </div>
           </div>
-          <div class="row mb-6">
-            <div class="col-6 col-md-12 mb-2">
-              <label for="" class="form-label">Valor Total</label>
-              <h6 id="digito"></h6>
-            </div>
-            <div class="col-6 col-md-6 mb-2">
-              <button>Limpar Tudo</button>
-              <button>Comprar Passagem</button>
-            </div>
+
+          <div class="col-6 col-md-12 mb-2">
+            <label for="" class="form-label">Valor Total</label>
+            <h5 id="digito"></h5>
           </div>
-          <script type="text/javascript">
-            var captar = "";
-            function chamar() {
-              captar = document.getElementById('valor').value;
-              document.getElementById('digito').innerHTML = captar;
-            };
-          </script>
+          <div class="col-6 col-md-6 mb-2">
+            <input class="btn" type="reset" />
+            <a type="button" class="btn" href="comprar.html">Comprar Passagem</a>
+          </div>
+
+          <script type=" text/javascript">
+                var captar = "";
+                function chamar() {
+                captar = document.getElementById('valor').value;
+                document.getElementById('digito').innerHTML = captar;
+                };
+                </script>
+
       </form>
     </div>
   </main>

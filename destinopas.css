@@ -5,9 +5,10 @@
   --background-color-3: #f6f8f5;
   --background-color-4: #00004d94;
 }
-h2 {
+h2,
+h5,
+p {
   color: var(--background-color-1);
-  text-align: center;
 }
 a {
   cursor: pointer;
@@ -79,14 +80,16 @@ h1 {
 /*login*/
 /*Cabeçanho*/
 
-/*Cabeçanho*/
+/*Conteudo*/
 .escolher {
   padding: 70px;
 }
 .pro {
   color: red;
 }
-/*Cabeçanho*/
+#destino {
+}
+/*Conteudo*/
 
 /*Rodape*/
 footer {
